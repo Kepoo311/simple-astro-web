@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Poppins:ital,wght@0,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  position: relative;
+  background: url('../property/8005817.jpg') right no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.main_box .sidebar_menu {
+  position: fixed;
+  height: 100vh;
+  width: 280px;
+  left: -280px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  transition: all 0.3s linear;
+  backdrop-filter: blur(5px); /* Efek blur untuk latar belakang */
+  z-index: 999; /* Mengatur z-index untuk menempatkan sidebar di atas elemen lain */
+}
+.sidebar_menu a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.65); /* Menambahkan bayangan pada teks */
+}
+.sidebar_menu .logo{
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5);
+}
+.sidebar_menu .logo a{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+  left: 50px;
+  line-height: 60px;
+  text-decoration: none;
+}
+.sidebar_menu .menu{
+  position: absolute;
+  top: 80px;
+  width:100%;
+}
+.sidebar_menu .menu li{
+  margin-top: 6px;
+  padding: 14px 20px;
+}
+.sidebar_menu .menu i{
+  color: #fff;
+  font-size: 20px;
+  padding-right: 8px;
+}
+.sidebar_menu .menu a{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+.sidebar_menu .menu li:hover{
+  border-left: 1px solid #fff;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.sidebar_menu .social_media{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+.sidebar_menu .social_media i{
+  text-decoration: none;
+  padding: 0 5px;
+  color: #fff;
+  opacity: 0.6;
+  font-size: 20px;
+}
+.sidebar_menu .social_media i:hover{
+  opacity: 1;
+  transition: all 0.2s linear;
+  transform: scale(1.01);
+}
+#check{
+  display: none;
+}
+.main_box .btn_one i{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s linear;  
+}
+ .sidebar_menu .btn_two i{
+  font-size: 25px;
+  line-height: 60px;
+  position: absolute;
+  left: 240px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.btn_one i:hover{
+  font-size: 29px;
+}
+.btn_two i:hover{
+  font-size: 24px;
+}
+#check:checked ~ .sidebar_menu{
+  left: 0;
+}
+#check:checked ~ .btn_one i{
+  opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two i{
+  opacity: 1;
+}
+
+.XIPLG {
+    font-family: "Germania One";
+    color :white;
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10%;
+    margin: auto;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+audio {
+  display: flex;
+  text-align: center;
+  margin: 18% auto auto auto;
+  padding-top: 1%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* slash screen */
+/* Style the splash screen container */
+.splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0073e6; /* Set your desired background color */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+/* Style the content inside the splash screen */
+.splash-content {
+  text-align: center;
+  color: #fff; /* Text color */
+}
+
+.splash-content .sples {
+  font-size: 2em;
+}
+
+.splash-content .splis {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Keyframes for the slide-up animation with a delay */
+@keyframes slide-up {
+  0% {
+      transform: translateY(0);
+  }
+  20% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+}
+
+/* Apply the animation to the .slide-up class */
+.splash.slide-up {
+  animation: slide-up 2s ease .1s forwards; /* 1s delay before animation starts */
+}
+
+
+/* end */
+ /* about Component */
+.PPLG {
+    color :white;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 15%;
+    margin: auto;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.textabt{
+    color :white;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1%;
+    margin: auto;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+/* about Component */
+
+/* Rumah Component */
+.PPLGPROP {
+    color :white;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5%;
+    margin: auto;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.tbrumah {
+    margin: 5.5% auto auto auto;
+    border-collapse: collapse;
+    background-color: violet;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+td {
+    padding: 7px;
+    text-align: center; /* Mengatur teks dalam sel tabel menjadi tengah */
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    padding: 7px;
+    text-align: center; /* Mengatur teks dalam sel header tabel menjadi tengah */
+    border-bottom: 1px solid #ddd;
+    background-color: paleturquoise;
+}
+
+.rmh {
+    text-align: center; /* Mengatur teks dalam sel gambar menjadi tengah */
+    height: 250px;
+    width: auto;
+}
+
+.kocak {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    padding: 5px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #24292e;
+    background-color: #fafbfc;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+}
+
+.kocak:hover {
+    background-color: #f3f4f6;
+    border-color: #1b1f2326;
+    transition-duration: 0.1s;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+  
+/* Menerapkan gaya pada daftar ul */
+ul {
+  list-style-type: none; /* Menghapus bullet points dari daftar */
+  padding: 0;
+  margin: 0;
+}
+
+/* Menerapkan gaya pada setiap item daftar li */
+li {
+  margin-bottom: 10px; /* Menambahkan ruang antara setiap item */
+}
+
+/* Menerapkan gaya pada tautan (link) di dalam daftar */
+li a {
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  color: #007BFF; /* Warna teks tautan */
+  font-weight: bold; /* Membuat teks tautan lebih tebal */
+  font-size: 18px; /* Ukuran teks tautan */
+  transition: color 0.3s ease-in-out; /* Animasi perubahan warna teks saat dihover */
+}
+
+/* Menerapkan efek hover pada tautan */
+li a:hover {
+  color: #FF5733; /* Warna teks saat dihover */
+}
+
+/* Rumah Component */
+
+iframe{
+  position: fixed;
+  top: 60%;
+  left: 50%;
+ 
+  transform: translate(-50%, -50%);
+}
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background: white;
+  cursor: pointer;
+
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+ 
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+
+.button-85 a{
+    text-decoration: none;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #0000FF,   
+    #0096FF,   
+    #6495ED,   
+    #00008B,   
+    #1434A4,   
+    #3F00FF,   
+    #5D3FD3,   
+    #1F51FF,   
+    #4169E1   
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 500%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.rotating-text {
+  display: inline-block;
+  transition: opacity 1s ease-in-out;
+  opacity: 0; /* Start with opacity set to 0 to hide the text */
+}
+
+/* Define CSS rules to toggle the text and fade it in */
+.rotating-text.show {
+  opacity: 1;
+}
+
+/* Type effect */
+.textgerak {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.textgerak .spantek {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  position: relative;
+}
+.textgerak .spantek::before {
+  content: "";
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: #000000;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+.textgerak .spantek.stop-blinking::before {
+  animation: none;
+}
+@keyframes blink {
+  50% { opacity: 0 }
+}
+/* Type effect */
+
+/* Navbar TUgas*/
+/* Style untuk navbar */
+.navbar {
+    background-color: #6C00FF;
+    overflow: hidden;
+    position: fixed;
+    z-index: 2; /* Menambahkan z-index */
+    width: 100%;
+    height: 60px;
+}
+
+/* Style untuk item-item dalam navbar */
+.navbar-item {
+    float: right;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.navbar-logo {
+  font-family: 'Germania One', sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 10px rgb(0, 0, 0);
+  float: left;
+  padding: 10px 20px;
+}
+.sidebar {
+  height: 84.7%;
+  width: 250px;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  background-color: #3C79F5;
+  overflow-x: hidden;
+  padding-top: 20px;
+  z-index: 0;
+}
+
+/* Style untuk item-item dalam sidebar */
+.sidebar-item {
+  padding: 10px 15px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+/* Efek hover saat kursor diarahkan ke item sidebar */
+.sidebar-item:hover {
+  background-color: #ffffff55;
+}
+/* Efek hover saat kursor diarahkan ke item navbar */
+.navbar-item:hover {
+    background-color: #ffffff55;
+}
+
+/* Style untuk search container */
+.search-bar {
+  text-align: end;
+  position: absolute;
+  padding-top: 10px;
+  padding-right: 10px;
+  top: 55px; 
+  left: 0;
+  right: 0;
+  margin: 0 auto; 
+}
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search-bar button {
+  padding: 10px 20px;
+  background: #337CCF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main{
+  padding-top: 20px;
+  padding-left: 300px;
+}
+
+.imek{
+  display: flex;
+  padding-top: 150px;
+  padding-left: 300px;
+}
+
+.lorem , .haju{
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.imek1{
+  margin-left: 10px;
+  height: 190px;
+  width: 300px;
+}
+
+.ulii{
+  background-color: yellow;
+  margin-left: 10px;
+  width: 300px;
+}
+
+.navfot{
+  background-color: #F2DEBA;
+  padding: 4px;
+  margin-top: 100px;
+  bottom: 0px;
+  height: 55px;
+}
+
+.copyk{
+  margin-top: 15px;
+  text-align: center;
+  bottom: 0px;
+}
+
+/*Navbar Tugas  */
+/* Tampilan sidebar pada layar kecil */
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+      display: none;
+  }
+}

@@ -1,0 +1,50 @@
+---
+const { title } = Astro.props;
+import "../styles/global.css"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Kepodev | {title}</title>
+</head>
+<body>
+    <div class="splash slide-up">
+        <div class="splash">
+          <div class="splash-content">
+              <h1 class="sples">Kepodev Corp</h1>
+              <p class="splis">Loading...</p>
+          </div>
+      </div>
+    </div>
+        <div class="navbar">
+            <a class="navbar-logo" href="#">Kepodev Corp.</a>
+            <a class="navbar-item" href="./tugas">Vintage Web</a>
+            <a class="navbar-item" href="./about">About</a>
+            <a class="navbar-item" href="#">Biodata</a>
+            <a class="navbar-item" href="./rumah">House JB</a>
+            <a class="navbar-item" href="./">HomePage</a>
+        </div>
+    
+        <div class="search-bar">
+            <input type="text" placeholder="Search....">
+            <button type="submit">Search</button>
+        </div>
+
+
+    <div class="sidebar">
+        <a class="sidebar-item" href="./">HomePage</a>
+        <a class="sidebar-item" href="#">Tutor ga dek</a>
+        <a class="sidebar-item" href="#">Chawnimwleww</a>
+    </div>
+
+    <slot/>
+
+    <footer class="navfot">
+       <p class="copyk"> <i class="fa fa-copyright"></i> 2023 Kepodev Corp, Lampung, Indonesia.</p>
+    </footer>
+</body>
+</html>

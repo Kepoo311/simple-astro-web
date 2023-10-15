@@ -1,0 +1,140 @@
+---
+const { title } = Astro.props;
+import "../styles/global.css"
+import "../styles/global.scss"
+---
+
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kepodev | {title} </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+<body>
+
+  <div class="splash slide-up">
+    <div class="splash">
+      <div class="splash-content">
+          <h1 class="sples">Kepodev Corp</h1>
+          <p class="splis">Loading...</p>
+      </div>
+  </div>
+</div>
+
+
+  <div class="main_box">
+    <input type="checkbox" id="check">
+    <div class="btn_one">
+      <label for="check">
+        <i class="fas fa-bars"></i>
+      </label>
+    </div>
+    <div class="sidebar_menu">
+      <div class="logo">
+        <a href="#">Kepodev Corp</a>
+          </div>
+        <div class="btn_two">
+          <label for="check">
+            <i class="fas fa-times"></i>
+          </label>
+        </div>
+      <div class="menu">
+        <ul>
+          <li><i class="fas fa-qrcode"></i>
+            <a href="/">HomePage</a>
+          </li>
+          <li>
+            <i class="fas fa-link"></i>
+            <a href="./rumah">House For Sale</a>
+          </li>
+          <li>
+            <i class="fas fa-stream"></i>
+            <a href="#">Biodata</a>
+          </li>
+          <li>
+            <i class="fas fa-question-circle"></i>
+            <a href="./about">About</a>
+          </li>
+          <li>
+            <i class="fas fa-sliders-h"></i>
+            <a href="./tugas">Vintage Website</a>
+          </li>
+          <li>
+            <i class="fas fa-phone-volume"></i>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+          <i class="far fa-comments"></i>
+            <a href="#">Feedback</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social_media">
+        <ul>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+	<audio src="https://b.top4top.io/m_2830d7b011.mp3" autoplay loop></audio>
+  <slot></slot>
+  </body>
+
+</html>
+
+<script>
+const popupButton = document.getElementById("popupButton");
+const popup = document.getElementById("popup");
+const closeButton = document.getElementById("closeButton");
+
+popupButton.addEventListener("click", function() {
+    popup.style.display = "block";
+});
+
+closeButton.addEventListener("click", function() {
+    popup.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+    if (event.target === popup) {
+        popup.style.display = "none";
+    }
+});
+</script>
+
+<script>
+  const dynamicText = document.querySelector("h1 span");
+const words = ["Welcome To My Website.","I Am Game Developer.", "I Am Front End Developer.", "Andra Cupu.", "Andra X Azizi."];
+// Variables to track the position and deletion status of the word
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typeEffect = () => {
+    const currentWord = words[wordIndex];
+    const currentChar = currentWord.substring(0, charIndex);
+    dynamicText.textContent = currentChar;
+    dynamicText.classList.add("stop-blinking");
+    if (!isDeleting && charIndex < currentWord.length) {
+        // If condition is true, type the next character
+        charIndex++;
+        setTimeout(typeEffect, 100);
+    } else if (isDeleting && charIndex > 0) {
+        // If condition is true, remove the previous character
+        charIndex--;
+        setTimeout(typeEffect, 100);
+    } else {
+        // If word is deleted then switch to the next word
+        isDeleting = !isDeleting;
+        dynamicText.classList.remove("stop-blinking");
+        wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
+        setTimeout(typeEffect, 100);
+    }
+}
+typeEffect();
+</script>
