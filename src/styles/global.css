@@ -619,6 +619,12 @@ li a:hover {
   bottom: 0px;
 }
 
+.emteh{
+  opacity: 0;
+  z-index: -2;
+  font-size: 0%;
+}
+
 /*Navbar Tugas  */
 /* Tampilan sidebar pada layar kecil */
 @media screen and (max-width: 768px) {
@@ -673,6 +679,25 @@ li a:hover {
   font-size: 20px;
 }
 /* about end */
+
+/* under construction awkakw */
+.under-conts{
+  background-color: red;
+  z-index: 999;
+}
+
+.under-conts div{
+  opacity: 0;
+}
+
+.emteh{
+  opacity: 1;
+  padding-top: 99px;
+  text-align: center;
+  font-size: 50px;
+  z-index: 999;
+}
+/* under construction awkakw end*/
 }
 
 @media screen and (min-width: 769px) {
