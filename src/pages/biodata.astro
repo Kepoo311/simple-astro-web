@@ -1,0 +1,85 @@
+---
+import Layout from "../components/navbar.astro";
+const title = "Biodata";
+import andraimg from "../assets/gwh.jpg";
+import pakimg from "../assets/paktol.jpg";
+import dettol from "../assets/dettol.jpg";
+import relimg from "../assets/farell.jpg";
+import renoimg from "../assets/reno.jpg";
+import noimg from "../assets/idkss.png";
+---
+
+<Layout title={title}>
+  <p class="biojdl">PPLG Classmate's</p>
+  <div class="bungkus">
+    <div class="pembungkus">
+      <i id="kiri" class="fa fa-angle-left"></i>
+      <ul class="corosal">
+        <li class="card">
+          <div class="gambar-propil">
+            <img src={andraimg.src} alt="" class="propil" draggable="false" />
+          </div>
+          <h2 class="namaa">Riandra X Azizi</h2>
+          <span class="biodatas">Front End Ajalah</span>
+        </li>
+
+        <li class="card">
+          <div class="gambar-propil">
+            <img src={pakimg.src} alt="" class="propil" draggable="false" />
+          </div>
+          <h2 class="namaa">Paksi X Adel</h2>
+          <span class="biodatas">Back End Gjls</span>
+        </li>
+
+        <li class="card">
+          <div class="gambar-propil">
+            <img src={dettol.src} alt="" class="propil" draggable="false" />
+          </div>
+          <h2 class="namaa">Denis X Ara Ara</h2>
+          <span class="biodatas">Full Stack Ktnya</span>
+        </li>
+
+        <li class="card">
+          <div class="gambar-propil">
+            <img src={relimg.src} alt="" class="propil" draggable="false" />
+          </div>
+          <h2 class="namaa">Farel X Coding</h2>
+          <span class="biodatas">Fullstack Banget Ni Mh</span>
+        </li>
+
+        <li class="card">
+          <div class="gambar-propil">
+            <img src={renoimg.src} alt="" class="propil" draggable="false" />
+          </div>
+          <h2 class="namaa">Reyno X Ella</h2>
+          <span class="biodatas">G Tawu gwh</span>
+        </li>
+
+        <li class="card">
+          <div class="gambar-propil">
+            <img src={noimg.src} alt="" class="propil" draggable="false" />
+          </div>
+          <h2 class="namaa">Ameri</h2>
+          <span class="biodatas">Hemker Berkelas</span>
+        </li>
+
+        <li class="card">
+          <div class="gambar-propil">
+            <img src={noimg.src} alt="" class="propil" draggable="false" />
+          </div>
+          <h2 class="namaa">Rico</h2>
+          <span class="biodatas">Putsal Pero</span>
+        </li>
+
+        <li class="card">
+          <div class="gambar-propil">
+            <img src={noimg.src} alt="" class="propil" draggable="false" />
+          </div>
+          <h2 class="namaa">Rasya</h2>
+          <span class="biodatas">Putsal Maprend</span>
+        </li>
+      </ul>
+      <i id="kanan" class="fa fa-angle-right"></i>
+    </div>
+  </div>
+</Layout>

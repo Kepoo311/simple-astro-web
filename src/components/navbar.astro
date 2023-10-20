@@ -1,138 +1,261 @@
 ---
 const { title } = Astro.props;
-import "../styles/global.css"
-import "../styles/global.scss"
+import "../styles/global.css";
+import "../styles/global.scss";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Kepodev | {title} </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-   </head>
-<body>
-
-  <div class="splash slide-up">
-    <div class="splash">
-      <div class="splash-content">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kepodev | {title}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="splash slide-up">
+      <div class="splash">
+        <div class="splash-content">
           <h1 class="sples">Kepodev Corp.</h1>
           <p class="splis">Loading...</p>
+        </div>
       </div>
-  </div>
-</div>
-
-  <div class="main_box">
-    <input type="checkbox" id="check">
-    <div class="btn_one">
-      <label for="check">
-        <i class="fas fa-bars"></i>
-      </label>
     </div>
-    <div class="sidebar_menu">
-      <div class="logo">
-        <a href="./">Kepodev Corp</a>
-          </div>
-        <div class="btn_two">
+
+    <div class="kepala">
+      <div class="Navbar-main">
+        <a href="./" class="navbar-logo">Kepodev Corp.</a>
+        <a href="./tugas" class="navbar-item">Vintage Website</a>
+        <a href="./about" class="navbar-item">About</a>
+        <a href="./biodata" class="navbar-item">Biodata</a>
+        <a href="./rumah" class="navbar-item">House For Sale</a>
+        <a href="./" class="navbar-item">Homapage</a>
+      </div>
+
+      <div class="main_box">
+        <input type="checkbox" id="check" />
+        <div class="btn_one">
           <label for="check">
-            <i class="fas fa-times"></i>
+            <i class="fas fa-bars"></i>
           </label>
         </div>
-      <div class="menu">
-        <ul>
-          <li><i class="fas fa-qrcode"></i>
-            <a href="/">HomePage</a>
-          </li>
-          <li>
-            <i class="fas fa-link"></i>
-            <a href="./rumah">House For Sale</a>
-          </li>
-          <li>
-            <i class="fas fa-stream"></i>
-            <a href="#">Biodata</a>
-          </li>
-          <li>
-            <i class="fas fa-question-circle"></i>
-            <a href="./about">About</a>
-          </li>
-          <li>
-            <i class="fas fa-sliders-h"></i>
-            <a href="./tugas">Vintage Website</a>
-          </li>
-          <li>
-            <i class="fas fa-phone-volume"></i>
-            <a href="#">Contact</a>
-          </li>
-          <li>
-          <i class="far fa-comments"></i>
-            <a href="#">Feedback</a>
-          </li>
-        </ul>
-      </div>
-      <div class="social_media">
-        <ul>
-          <a href="https://vt.tiktok.com/ZSN6FwnSJ/" target="_blank"><i class="fab fa-tiktok"></i></a>
-          <a href="https://instagram.com/andra_vlz?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://youtube.com/@trusttactic100?si=5-_rZK_fcmZe8zdq" target="_blank"><i class="fab fa-youtube"></i></a>
-        </ul>
+        <div class="sidebar_menu">
+          <div class="logo">
+            <a href="./">Kepodev Corp</a>
+          </div>
+          <div class="btn_two">
+            <label for="check">
+              <i class="fas fa-times"></i>
+            </label>
+          </div>
+          <div class="menu">
+            <ul>
+              <li>
+                <i class="fas fa-qrcode"></i>
+                <a href="/">HomePage</a>
+              </li>
+              <li>
+                <i class="fas fa-link"></i>
+                <a href="./rumah">House For Sale</a>
+              </li>
+              <li>
+                <i class="fas fa-stream"></i>
+                <a href="./biodata">Biodata</a>
+              </li>
+              <li>
+                <i class="fas fa-question-circle"></i>
+                <a href="./about">About</a>
+              </li>
+              <li>
+                <i class="fas fa-sliders-h"></i>
+                <a href="./tugas">Vintage Website</a>
+              </li>
+              <li>
+                <i class="fas fa-phone-volume"></i>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <i class="far fa-comments"></i>
+                <a href="#">Feedback</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social_media">
+            <ul>
+              <a href="https://vt.tiktok.com/ZSN6FwnSJ/" target="_blank"
+                ><i class="fab fa-tiktok"></i></a
+              >
+              <a
+                href="https://instagram.com/andra_vlz?igshid=OGQ5ZDc2ODk2ZA=="
+                target="_blank"><i class="fab fa-instagram"></i></a
+              >
+              <a
+                href="https://youtube.com/@trusttactic100?si=5-_rZK_fcmZe8zdq"
+                target="_blank"><i class="fab fa-youtube"></i></a
+              >
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-	<audio src="https://a.top4top.me/uploads/top4top_mee15eaa6782081.mp3" autoplay loop></audio>
-  <slot></slot>
+    <audio
+      src="https://a.top4top.me/uploads/top4top_mee15eaa6782081.mp3"
+      autoplay
+      loop></audio>
+    <slot />
   </body>
-
 </html>
 
 <script>
-const popupButton = document.getElementById("popupButton");
-const popup = document.getElementById("popup");
-const closeButton = document.getElementById("closeButton");
+  const popupButton = document.getElementById("popupButton");
+  const popup = document.getElementById("popup");
+  const closeButton = document.getElementById("closeButton");
 
-popupButton.addEventListener("click", function() {
+  popupButton.addEventListener("click", function () {
     popup.style.display = "block";
-});
+  });
 
-closeButton.addEventListener("click", function() {
+  closeButton.addEventListener("click", function () {
     popup.style.display = "none";
-});
+  });
 
-window.addEventListener("click", function(event) {
+  window.addEventListener("click", function (event) {
     if (event.target === popup) {
-        popup.style.display = "none";
+      popup.style.display = "none";
     }
-});
+  });
 </script>
 
 <script>
   const dynamicText = document.querySelector("h1 span");
-const words = ["Welcome To My Website.","I Am Game Developer.", "I Am Front End Developer.", "Andra Cupu.", "Andra X Azizi."];
-// Variables to track the position and deletion status of the word
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-const typeEffect = () => {
+  const words = [
+    "Welcome To My Website.",
+    "I Am Game Developer.",
+    "I Am Front End Developer.",
+    "Andra Cupu.",
+    "Andra X Azizi.",
+  ];
+  // Variables to track the position and deletion status of the word
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typeEffect = () => {
     const currentWord = words[wordIndex];
     const currentChar = currentWord.substring(0, charIndex);
     dynamicText.textContent = currentChar;
     dynamicText.classList.add("stop-blinking");
     if (!isDeleting && charIndex < currentWord.length) {
-        // If condition is true, type the next character
-        charIndex++;
-        setTimeout(typeEffect, 100);
+      // If condition is true, type the next character
+      charIndex++;
+      setTimeout(typeEffect, 100);
     } else if (isDeleting && charIndex > 0) {
-        // If condition is true, remove the previous character
-        charIndex--;
-        setTimeout(typeEffect, 100);
+      // If condition is true, remove the previous character
+      charIndex--;
+      setTimeout(typeEffect, 100);
     } else {
-        // If word is deleted then switch to the next word
-        isDeleting = !isDeleting;
-        dynamicText.classList.remove("stop-blinking");
-        wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
-        setTimeout(typeEffect, 100);
+      // If word is deleted then switch to the next word
+      isDeleting = !isDeleting;
+      dynamicText.classList.remove("stop-blinking");
+      wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
+      setTimeout(typeEffect, 100);
     }
-}
-typeEffect();
+  };
+  typeEffect();
+</script>
+
+<!-- corosal slider script -source yt wkwwkwk -->
+<script defer>
+const pembungkus = document.querySelector(".pembungkus");
+const carousel = document.querySelector(".corosal");
+const arrowBtns = document.querySelectorAll(".pembungkus i");
+const ukuranKartuAwal = carousel.querySelector(".card").offsetWidth;
+const anakCorosal = [...carousel.children];
+
+let isDragging = false,
+  startX,
+  startScrollLeft,
+  timeoutID;
+
+// mendapatkan jumlah kartu yang cukup untuk 1 corosal
+let cardPreview = Math.round(carousel.offsetWidth / ukuranKartuAwal);
+
+// memasukkan beberapa copy kartu terakhir ke awal dari corosal untuk infinity scroll
+anakCorosal.slice(-cardPreview).forEach((card) => {
+  carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
+
+// memasukkan beberapa copy kartu pertama ke akhir dari corosal untuk infinity scroll
+anakCorosal.slice(0, cardPreview).forEach((card) => {
+  carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+
+// untung button kanan kiri masseh
+arrowBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    carousel.scrollLeft +=
+      btn.id === "kiri" ? -ukuranKartuAwal : ukuranKartuAwal;
+  });
+});
+
+const dragStart = (e) => {
+  isDragging = true;
+  carousel.classList.add("dragging");
+  // merekam posisi scroll dan cursor
+  startX = e.pageX;
+  startScrollLeft = carousel.scrollLeft;
+};
+
+const dragging = (e) => {
+  if (!isDragging) return;
+  //update posisi scroll berdasarkan  pergerkan kursor
+  carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+};
+
+const dragStop = () => {
+  isDragging = false;
+  carousel.classList.remove("dragging");
+};
+
+const autoPlay = () => {
+  if (window.innerWidth < 800) return; //biar ga ke play di layar ukuran kurang dari 800
+  //play setaip 1500 ms (2detik)
+  timeoutID = setTimeout(
+    () => (carousel.scrollLeft += ukuranKartuAwal),
+    1500
+  );
+};
+
+autoPlay();
+
+const infiniteScroll = () => {
+  //kalo dah mentak kiri scroll ke akhir
+    if (carousel.scrollLeft === 0) {
+      carousel.classList.add("no-transition");
+      carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
+      carousel.classList.remove("no-transition");
+    } //kalo dah mentak kanan scroll ke awal
+    else if (
+      Math.ceil(carousel.scrollLeft) ===
+      carousel.scrollWidth - carousel.offsetWidth
+    ) {
+      carousel.classList.add("no-transition");//biar gada transisi
+      carousel.scrollLeft = carousel.offsetWidth;
+      carousel.classList.remove("no-transition");//balikintransisi
+    }
+
+    // menghapus segla timout
+    clearTimeout(timeoutID);
+    if (!pembungkus.matches(":hover")) autoPlay();
+  };
+
+  carousel.addEventListener("mousedown", dragStart);
+  carousel.addEventListener("mousemove", dragging);
+  document.addEventListener("mouseup", dragStop);
+  carousel.addEventListener("scroll", infiniteScroll);
+  pembungkus.addEventListener("mouseenter", () => clearTimeout(timeoutID));
+  pembungkus.addEventListener("mouseleave", autoPlay);
 </script>
