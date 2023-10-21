@@ -2,7 +2,8 @@
 
 ini adalah project website yang di buat dengan astro, tujuan project ini di buat adalah untuk belajar menggunakan astro
 
-##Requirement
+## Requirement
+
 Node Js
 
 ## Installation
