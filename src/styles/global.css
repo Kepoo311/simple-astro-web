@@ -789,9 +789,10 @@ li a:hover {
 .corosal .card {
   scroll-snap-align: start;
   list-style: none;
-  background: white;
+  background: rgb(104,116,232);
+  background: linear-gradient(180deg, rgba(104,116,232,1) 35%, rgba(255,255,255,1) 35%);
   border-radius: 10px;
-  height: 300px;
+  height: 342px;
   padding-bottom: 15px;
   cursor: pointer;
   display: flex;
@@ -816,6 +817,7 @@ li a:hover {
 }
 
 .card .gambar-propil {
+  margin-top: 5%;
   background: orange;
   width: 108px;
   height: 108px;
@@ -841,6 +843,156 @@ li a:hover {
   font-size: 1rem;
 }
 
+.card .tombol{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.card .tombol button {
+  padding: 8px 22px;
+  background: #6874E8;
+  color: #FFF;
+  list-style: none;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 15px;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+
+.card .tombol button:hover{
+  background: #4757e6;
+  cursor: pointer;
+}
+
+.pupup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pupup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  min-height: 300px;
+  min-width: 500px;
+}
+
+.pupup-content i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  font-size: 100px;
+}
+
+.pupup-content p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 65px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.okbut{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+}
+.okbut .butun{
+  cursor: pointer;
+  text-align: center;
+  padding: 8px 22px;
+  background: #6874E8;
+  color: #FFF;
+  list-style: none;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 15px;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+
+.okbut .butun:hover{
+  background: #4757e6;
+}
+
+.biopop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+} 
+.biopop-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push content to the top and button to the bottom */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  min-height: 300px;
+  min-width: 500px;
+}
+
+.biopop-content h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.biopop-content p{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.okbut-bio{
+  display: flex;
+  justify-content: center;
+  }
+  .okbut-bio .butun{
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 22px;
+    background: #6874E8;
+    color: #FFF;
+    list-style: none;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 15px;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+  }
+
+  .okbut-bio .butun:hover{
+    background: #4757e6;
+    cursor: pointer;
+  }
+
 /* End OF biodata style */
 /* Tampilan pada layar kecil */
 @media screen and (max-width: 900px) {
@@ -852,6 +1004,12 @@ li a:hover {
 @media screen and (max-width: 600px) {
   .pembungkus .corosal {
     grid-auto-columns: 100%;
+  }
+  .biopop{
+    min-width: 400px;
+  }
+  .biopop p{
+    font-size: 20px;
   }
 }
 

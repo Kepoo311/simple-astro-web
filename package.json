@@ -12,6 +12,7 @@
   "dependencies": {
     "astro": "^3.2.0",
     "react": "^18.2.0",
-    "sass": "^1.69.3"
+    "sass": "^1.69.3",
+    "sweetalert2": "^11.7.32"
   }
 }

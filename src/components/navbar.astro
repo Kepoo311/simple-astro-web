@@ -11,10 +11,7 @@ import "../styles/global.scss";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kepodev | {title}</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="splash slide-up">
@@ -258,4 +255,62 @@ const infiniteScroll = () => {
   carousel.addEventListener("scroll", infiniteScroll);
   pembungkus.addEventListener("mouseenter", () => clearTimeout(timeoutID));
   pembungkus.addEventListener("mouseleave", autoPlay);
+</script>
+
+<script lang="javascript">
+document.querySelectorAll(".hirepls").forEach(function (button) {
+  button.addEventListener("click", function () {
+    document.querySelector(".pupups").style.display = "block";
+  });
+});
+
+document.querySelector(".closepupup").addEventListener("click", function () {
+  document.querySelector(".pupups").style.display = "none";
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target === document.querySelector(".pupups")) {
+    document.querySelector(".pupups").style.display = "none";
+  }
+});
+</script>
+
+<script defer>
+// Fungsi untuk menampilkan biodata berdasarkan ID tombol
+function tampilkanBiodata(idButton) {
+  var biodataId = "biodata" + idButton.slice(-1); // Membuat ID biodata yang sesuai
+  var biodata = document.getElementById(biodataId);
+
+  if (biodata.style.display === "none" || biodata.style.display === "") {
+    biodata.style.display = "block";
+  } else {
+    biodata.style.display = "none";
+  }
+}
+
+// Menambahkan event listener untuk setiap tombol yang menampilkan biodata
+var buttons = document.querySelectorAll("button[id^='button']");
+buttons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    tampilkanBiodata(this.id);
+  });
+});
+
+// Fungsi untuk menutup biodata dengan ID "biodataX"
+function closeBiodata(idButton) {
+  var biodataId = "biodata" + idButton.slice(-1); // Mencari ID biodata yang sesuai
+  var biodata = document.getElementById(biodataId);
+  biodata.style.display = "none";
+}
+
+// Menambahkan event listener untuk tombol "Close" dengan ID "biodataX"
+buttons.forEach(function(button) {
+  var closeId = "biodata" + button.id.slice(-1); // Membuat ID "biodataX"
+  var closeButton = document.getElementById(closeId);
+
+  closeButton.addEventListener("click", function() {
+    closeBiodata(button.id);
+  });
+});
+
 </script>
