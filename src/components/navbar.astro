@@ -11,7 +11,13 @@ import "../styles/global.scss";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kepodev | {title}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="splash slide-up">
@@ -230,31 +236,31 @@ autoPlay();
 
 const infiniteScroll = () => {
   //kalo dah mentak kiri scroll ke akhir
-    if (carousel.scrollLeft === 0) {
-      carousel.classList.add("no-transition");
-      carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
-      carousel.classList.remove("no-transition");
-    } //kalo dah mentak kanan scroll ke awal
-    else if (
-      Math.ceil(carousel.scrollLeft) ===
-      carousel.scrollWidth - carousel.offsetWidth
-    ) {
-      carousel.classList.add("no-transition");//biar gada transisi
-      carousel.scrollLeft = carousel.offsetWidth;
-      carousel.classList.remove("no-transition");//balikintransisi
-    }
+  if (carousel.scrollLeft === 0) {
+    carousel.classList.add("no-transition");
+    carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
+    carousel.classList.remove("no-transition");
+  } //kalo dah mentak kanan scroll ke awal
+  else if (
+    Math.ceil(carousel.scrollLeft) ===
+    carousel.scrollWidth - carousel.offsetWidth
+  ) {
+    carousel.classList.add("no-transition"); //biar gada transisi
+    carousel.scrollLeft = carousel.offsetWidth;
+    carousel.classList.remove("no-transition"); //balikintransisi
+  }
 
-    // menghapus segla timout
-    clearTimeout(timeoutID);
-    if (!pembungkus.matches(":hover")) autoPlay();
-  };
+  // menghapus segla timout
+  clearTimeout(timeoutID);
+  if (!pembungkus.matches(":hover")) autoPlay();
+};
 
-  carousel.addEventListener("mousedown", dragStart);
-  carousel.addEventListener("mousemove", dragging);
-  document.addEventListener("mouseup", dragStop);
-  carousel.addEventListener("scroll", infiniteScroll);
-  pembungkus.addEventListener("mouseenter", () => clearTimeout(timeoutID));
-  pembungkus.addEventListener("mouseleave", autoPlay);
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("scroll", infiniteScroll);
+pembungkus.addEventListener("mouseenter", () => clearTimeout(timeoutID));
+pembungkus.addEventListener("mouseleave", autoPlay);
 </script>
 
 <script lang="javascript">
@@ -290,8 +296,8 @@ function tampilkanBiodata(idButton) {
 
 // Menambahkan event listener untuk setiap tombol yang menampilkan biodata
 var buttons = document.querySelectorAll("button[id^='button']");
-buttons.forEach(function(button) {
-  button.addEventListener("click", function() {
+buttons.forEach(function (button) {
+  button.addEventListener("click", function () {
     tampilkanBiodata(this.id);
   });
 });
@@ -304,13 +310,12 @@ function closeBiodata(idButton) {
 }
 
 // Menambahkan event listener untuk tombol "Close" dengan ID "biodataX"
-buttons.forEach(function(button) {
+buttons.forEach(function (button) {
   var closeId = "biodata" + button.id.slice(-1); // Membuat ID "biodataX"
   var closeButton = document.getElementById(closeId);
 
-  closeButton.addEventListener("click", function() {
-    closeBiodata(button.id);
+    closeButton.addEventListener("click", function () {
+      closeBiodata(button.id);
+    });
   });
-});
-
 </script>
