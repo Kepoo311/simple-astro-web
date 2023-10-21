@@ -2,13 +2,15 @@
 
 ini adalah project website yang di buat dengan astro, tujuan project ini di buat adalah untuk belajar menggunakan astro
 
-
+##Requirement
+Node Js
 
 ## Installation
 
 Jalankan web ini dengan
 
 ```bash
+  npm install i
   npm run dev
 ```
     
