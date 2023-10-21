@@ -11,7 +11,7 @@ Node Js
 Jalankan web ini dengan
 
 ```bash
-  npm install i
+  npm i
   npm run dev
 ```
     
