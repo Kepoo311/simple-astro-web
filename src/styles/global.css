@@ -1005,10 +1005,16 @@ margin-top: 40px;
   .pembungkus .corosal {
     grid-auto-columns: 100%;
   }
-  .biopop{
-    min-width: 400px;
+  .pupup-content{
+    min-width: 300px;
   }
-  .biopop p{
+  .pupup-content p{
+    font-size: 20px;
+  }
+  .biopop-content{
+    min-width: 300px;
+  }
+  .biopop-content p{
     font-size: 20px;
   }
 }
